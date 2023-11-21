@@ -1,0 +1,143 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: linear-gradient(180deg, #32bbf5, #072176);
+    min-height: 100vh;
+    width: 100%;
+    padding: 15px;
+}
+
+.todoApp{
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    /* margin: 100px auto 100px; */
+    padding: 10px 30px 40px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.todoApp h1{
+    display: flex;
+    align-items: center;
+    /* background: black; */
+    color: rgb(224, 151, 41);
+    margin-left: 60px;
+}
+
+.todoApp h1 img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.todoList{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    /* background: black; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.todoList input{
+    /* border: none; */
+    outline: none;
+    width: 80%;
+    height: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    border-color: transparent;
+}
+
+.todoList input:hover{
+    border-color: purple;
+}
+
+.todoList button{
+    /* border: none; */
+    outline: none;
+    padding: 13px;
+    font-size: 0.95em;
+    border-radius: 40px;
+    background: purple;
+    color:#fff;
+    border-color: transparent;
+}
+
+.todoList button:hover{
+    background: #fff;
+    color: purple;
+    cursor: pointer;
+    font-weight: bolder;
+    border-color: purple;
+}
+
+ul li{
+    display: flex;
+    /* background: rgb(138, 43, 226, 0.4); */
+    color: black;
+    margin-left: 10px;
+    font-size: 0.95em;
+    margin-right: 10px;
+    padding: 15px;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+ul li::before{
+    content: '';
+    background-image: url("images/unchecked.png");
+    width: 23px;
+    height: 23px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.check{
+    text-decoration: line-through;
+    color: black;
+    font-size: medium;
+}
+
+.check::before{
+    background-image: url("images/checked.png");
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+span{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+span:hover{
+    background-color: #edeef0;
+}
+
